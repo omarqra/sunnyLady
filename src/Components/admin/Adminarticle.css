@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Work+Sans&display=swap");
+
+.adminGoToAdd {
+  display: block;
+  padding: 25px;
+  background-color: #333;
+  color: #cccccc;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-bottom: 3px solid #ccc;
+}
+.adminGoToAdd:nth-of-type(1) {
+  color: red;
+}
+
+.articls {
+  z-index: 5;
+  margin-top: 100px;
+}
+.article-items {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  box-shadow: 15px 0px 15px -15px black, -12px 0px 15px -15px black;
+  background-color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.article-item:first-of-type {
+  margin-top: -100px;
+}
+.article-item:last-of-type {
+  margin-bottom: 50px;
+}
+.article-item {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+
+  border-radius: 250px;
+  z-index: 1;
+}
+.main-content {
+  font-family: "Work Sans", sans-serif;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  letter-spacing: 1px;
+  color: black;
+  cursor: pointer;
+}
+.main-content h2 {
+  font-family: "Lobster Two", cursive;
+  text-shadow: 1px 2px 2px white;
+  padding: 15px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+}
+.main-content p {
+  word-wrap: break-word;
+}
+.article-item #layout {
+  height: 100%;
+  border-radius: 250px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  filter: drop-shadow(2px 4px 6px black) contrast(0.7);
+}
+.layout-1 {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff75;
+  border-radius: 250px;
+}
+.article-item:hover #layout {
+  filter: drop-shadow(2px 4px 6px black) contrast(1);
+}
+.article-item:hover {
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .adminGoToAdd {
+    font-size: 25px;
+  }
+  .main-content {
+    font-size: 25px;
+    padding: 50px 20px;
+  }
+  .articls .container {
+    height: 120%;
+  }
+  .article-items {
+    padding: 0 75px;
+    row-gap: 75px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .articls .container {
+    height: 150%;
+  }
+}
+
+.tools {
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+  font-size: 25px;
+  color: red;
+}
+.tools i {
+  cursor: pointer;
+  padding: 10px;
+}
+.tools i:nth-of-type(2) {
+  color: green;
+}
+.tools i:hover {
+  transform: scale(1.2);
+}
